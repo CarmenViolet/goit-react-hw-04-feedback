@@ -1,0 +1,24 @@
+.button__option {
+   width: 65px;
+   height: 35px;
+
+   font-weight: 700;
+
+   color: #ee9070;
+   background-color: 	#FFEBCD;
+   border: 1px solid 	#B22222;
+   border-radius: 3px;
+}
+
+.button__option:not(:last-child) {
+    margin-right: 20px;
+}
+
+.button__option:hover {
+   transform: scale(1.2);
+
+   color: #f27e57;
+   background-color: 	#faddb3;
+   border: 1.5px solid 	#9f1c1c;
+ }
+ 
