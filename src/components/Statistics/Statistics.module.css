@@ -1,11 +1,11 @@
 .feedback__good {
-    color: #6B8E23;
+    color: #778792;
 }
 
 .feedback__neutral {
-    color: #DAA520;
+    color: #b2a69c;
 }
 
 .feedback__bad {
-    color: #B22222;
+    color: #613a3e;
 }
