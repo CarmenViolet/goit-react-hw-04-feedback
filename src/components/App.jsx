@@ -23,7 +23,7 @@ export class App extends Component{
   };
 
   onLeaveFeedback = (event) => {
-    this.setState((prevState) => ({[event.target.name]: prevState[event.target.name] + 1}))
+   return this.setState((prevState) => ({[event.target.name]: prevState[event.target.name] + 1}))
   };
 
   render () {
@@ -37,11 +37,11 @@ export class App extends Component{
       </Section>
 
       <Section title="Statictics">
-     {this.countTotalFeedback() > 0 ? (<Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positivePercentage = {this.countPositiveFeedbackPercentage}/>)
+     {this.countTotalFeedback() > 0 ? (<Statistics good={good} neutral={neutral} bad={bad} total={this.countTotalFeedback()} positivePercentage = {this.countPositiveFeedbackPercentage()}/>)
      : (<Notification message='There is no feedback yet!'/>)}
       </Section>
 
     </div>
   );
 }
-}
+};
